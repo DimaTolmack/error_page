@@ -1,4 +1,4 @@
-$fontsHeader:'Roboto', sans-serif;
+$fontsHeader: 'Roboto', sans-serif;
 
 body {
   padding: 0;
@@ -15,55 +15,48 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color:#ffffff;
+  color: #ffffff;
 
   .container-cap {
     width: 1440px;
     height: auto;
+    padding: 0 15px;
 
     .header-cap {
       display: flex;
-      justify-content:flex-end;
-/******Если ломается адаптив смотреть сюда */
-    .message-cap {
+      justify-content: flex-end;
+
+      .message-cap {
+
+        .message-cap__h1 {
+          font-size: 18px;
+          padding: 0;
+          margin: 0;
+          font-weight: 700;
 
 
-      .message-cap__h1 {
-        font-size:5em ;
-        padding: 0;
-        margin: 0;
-        font-weight: 700;
-      }
-
-      .message-cap__address {
-        line-height: 25px;
-
-        .message-cap__addres__p {
-        font-weight: bolder;
-          .message-cap__addres__p__span {
-            font-weight:lighter;
+          @media(max-width: 480px) {
+            font-size: 12px;
           }
         }
-        .message-cap__address__phone-link {
-          text-decoration: none;
-          color: #ffffff;
+
+        .message-cap__address {
+          line-height: 25px;
+
+          .message-cap__addres__p {
+            font-weight: bolder;
+
+            .message-cap__addres__p__span {
+              font-weight: lighter;
+            }
+          }
+
+          .message-cap__address__phone-link {
+            text-decoration: none;
+            color: #ffffff;
+          }
         }
       }
-
     }
-
   }
-  }
-
 }
-
-
-
-@media (max-width: 760px) {
-
-    .message-cap__h1 {
-      font-size: 2em;
-      background-color: green;
-    }
-
-  }

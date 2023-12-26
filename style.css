@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   padding: 0;
   margin: 0;
@@ -18,17 +17,22 @@ body {
 .wrapper-cap .container-cap {
   width: 1440px;
   height: auto;
+  padding: 0 15px;
 }
 .wrapper-cap .container-cap .header-cap {
   display: flex;
   justify-content: flex-end;
-  /******Если ломается адаптив смотреть сюда */
 }
 .wrapper-cap .container-cap .header-cap .message-cap .message-cap__h1 {
-  font-size: 5em;
+  font-size: 18px;
   padding: 0;
   margin: 0;
   font-weight: 700;
+}
+@media (max-width: 480px) {
+  .wrapper-cap .container-cap .header-cap .message-cap .message-cap__h1 {
+    font-size: 12px;
+  }
 }
 .wrapper-cap .container-cap .header-cap .message-cap .message-cap__address {
   line-height: 25px;
@@ -42,13 +46,6 @@ body {
 .wrapper-cap .container-cap .header-cap .message-cap .message-cap__address .message-cap__address__phone-link {
   text-decoration: none;
   color: #ffffff;
-}
-
-@media (max-width: 760px) {
-  .message-cap__h1 {
-    font-size: 2em;
-    background-color: green;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
