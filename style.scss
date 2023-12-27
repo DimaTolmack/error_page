@@ -26,17 +26,29 @@ body {
       display: flex;
       justify-content: flex-end;
 
+        @media (max-width: 480px) {
+          justify-content: center;
+        }
       .message-cap {
 
         .message-cap__h1 {
-          font-size: 18px;
+          font-size: 76px;
           padding: 0;
           margin: 0;
           font-weight: 700;
+          padding-right: 200px;
 
-
+          @media(max-width:1024px) {
+            font-size: 56px;
+            padding-right: 150px;
+          }
+          @media(max-width: 760px) {
+            font-size: 48px;
+            padding-right: 100px;
+          }
           @media(max-width: 480px) {
-            font-size: 12px;
+            font-size: 28px;
+            padding-right:0;
           }
         }
 
