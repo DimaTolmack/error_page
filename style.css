@@ -35,6 +35,14 @@ body {
   flex-direction: column;
   padding-right: 105px;
 }
+@media (max-width: 480px) {
+  .wrapper-cap .container-cap .header-cap .message-cap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+  }
+}
 .wrapper-cap .container-cap .header-cap .message-cap .message-cap__h1 {
   font-size: 76px;
   padding: 0;
